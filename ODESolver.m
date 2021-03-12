@@ -1,6 +1,7 @@
 %
 % Works But Not Complete Yet
-% 
+% 12/03/2021
+%
 % % % % % % % 
   
 function [] = ODESolver(eqn,xInit,yInit,xMax,intervalNumb,method);
@@ -9,7 +10,7 @@ function [] = ODESolver(eqn,xInit,yInit,xMax,intervalNumb,method);
     yVals(1) = yInit;
     colorMatrix = (jet(5));
     if contains(method,["Euler","Ralston","FourthRK","Heun","Adams","All"],"IgnoreCase", true)==0
-        fprintf('\nUnvalid Method Selection.\n')
+        fprintf('\nInvalid Method Selection.\n')
         return
     end
 %% Euler (First Order Runge-Kutta)
