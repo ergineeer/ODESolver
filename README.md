@@ -7,7 +7,7 @@ Numerical Solution for Ordinary Differential Equations (IVP Problems)
 - **Ralston's Second-Order Runge-Kutta**, 
 - **Fourth-Order Runge-Kutta**, 
 - **Non-Self-Starting Heun**, 
-- **Adams-Bashforts** as Open Predictor and **Adams-Moulton** as Closed Corrector.
+- **Adams-Bashforth** as Open Predictor and **Adams-Moulton** as Closed Corrector.
 
 # Usage
 ODESolver(eqn,xInit,yInit,xMax,intervalNumb,method);
@@ -20,5 +20,7 @@ where
 - intervalNumb: Number of intervals
 - method: Numerical method ("---")
 - Example: ODESolver(f,0,1,3,50,"all") where f=@(x,y) x*y or anything
+
+Notice that Fourth-Order Runge Kutta Method is used to numerically determine several values for NSS Heun's Method and Fourth-Order Adams (Adams-Bashforth and Adams-Moulton).
 
 Thanks.
